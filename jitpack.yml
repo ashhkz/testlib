@@ -1,0 +1,7 @@
+# Install the first AAR file
+FILE1="-Dfile=google-webrtc-1.0.32006.aar"
+mvn install:install-file $FILE1 -DgroupId=com.lb.sdktest -DartifactId=test1 -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
+
+# Install the second AAR file
+FILE2="-Dfile=Wroup-master-release.aar"
+mvn install:install-file $FILE2 -DgroupId=com.lb.sdktest -DartifactId=test2 -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
